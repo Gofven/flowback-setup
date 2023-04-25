@@ -1,8 +1,10 @@
 #!/bin/bash
-SCREEN_NAME="flowback-test-frontend"
 
-screen -XS "${SCREEN_NAME}" quit
+source .env
+cd "$(pwd)/frontend" || exit
+
+screen -XS flowback-"${INSTANCE_NAME}"-frontend quit
 
 git pull https://github.com/lokehagberg/flowback-frontend.git
 npm install
-screen -S "${SCREEN_NAME}" -dm bash -c "yarn run dev"
+screen -S flowback-"${INSTANCE_NAME}"-frontend -dm bash -c "yarn run dev"

@@ -1,5 +1,6 @@
 # Flowback Quick Setup
 This quick setup is (for now) a collection of scripts to setup Flowback!
+(This collection of script has been tested for Ubuntu 22.04 LTS)
 
 To set it up initially, run the following scripts in resources folder:
 * caddy.bash

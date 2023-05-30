@@ -1,4 +1,4 @@
-direktdemokraterna.flowback.org {
+test.flowback.org {
         reverse_proxy * :5173  # Frontend Port
 
         route /api/* {
@@ -8,7 +8,7 @@ direktdemokraterna.flowback.org {
 
         route /api/media/* {
                 uri strip_prefix /api/media
-                root * /home/gofven/Flowback/test/backend/media  # Flowback Backend Media directory
+                root * /home/user/Flowback/test/backend/media  # Flowback Backend Media directory
                 file_server
 
         }

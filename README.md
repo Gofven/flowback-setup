@@ -1,6 +1,5 @@
 # Flowback Quick Setup
 This quick setup is (for now) a collection of scripts to setup Flowback!
-If you plan to use it, do not clone this repository, download it as zip!
 
 To set it up initially, run the following scripts in resources folder:
 * caddy.bash
@@ -9,6 +8,7 @@ To set it up initially, run the following scripts in resources folder:
 * npm.bash
 * docker.bash
 * redis.bash
+* rabbitmq.bash
 
 Once done, in resources/flowback, run following download script within your preferred directory:
 * backend.bash

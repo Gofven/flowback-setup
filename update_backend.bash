@@ -7,7 +7,7 @@ screen -XS flowback-"${INSTANCE_NAME}"-backend quit
 screen -XS flowback-"${INSTANCE_NAME}"-celery-beat quit
 screen -XS flowback-"${INSTANCE_NAME}"-celery-worker quit
 source venv/bin/activate
-git pull https://github.com/lokehagberg/flowback-backend.git
+git pull "${BACKEND_REPO}"
 python3.10 -m pip install -r requirements.txt
 python3.10 manage.py migrate
 screen -S flowback-"${INSTANCE_NAME}"-backend -dm bash -c "source venv/bin/activate; python manage.py runserver localhost:${BACKEND_PORT}"

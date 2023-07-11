@@ -21,3 +21,7 @@ Also follow the .env.example in respective backend/frontend folders.
 
 once done, you can run update_backend.bash and update_frontend.bash within respective backend/frontend folders to setup
 the flowback instance. Don't forget to change these files if there's any customizations needed!
+
+# Flowback In Depth Setup
+
+See this post by Kevin Triplett: https://medium.com/@kevin_77943/installing-flowback-on-ubuntu-8bdc5ecd2354

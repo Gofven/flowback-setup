@@ -23,4 +23,9 @@ Copy resources/templates/flowback/backend/.flowback_pgpass to the new backend di
 
 Also follow the .env.example for the respective new backend/frontend folders.
 
-Once done, you can run update_backend.bash and update_frontend.bash to update the flowback instance. Don't forget to change these files if there's any customizations needed!
+Once done, you can run update_backend.bash and update_frontend.bash within respective backend/frontend folders to setup
+the flowback instance. Don't forget to change these files if there's any customizations needed!
+
+# Flowback In Depth Setup
+
+See this post by Kevin Triplett: https://medium.com/@kevin_77943/installing-flowback-on-ubuntu-8bdc5ecd2354

@@ -2,6 +2,10 @@
 This quick setup is (for now) a collection of scripts to setup Flowback!
 (This collection of script has been tested for Ubuntu 22.04 LTS)
 
+Detailed instructions are available at <url>. For advanced users, here are the highlights:
+
+Modify the .env file as needed.
+
 To set it up initially, run the following scripts in resources folder:
 * caddy.bash
 * python.bash
@@ -11,15 +15,15 @@ To set it up initially, run the following scripts in resources folder:
 * redis.bash
 * rabbitmq.bash
 
-Once done, in resources/flowback, run following download script within your preferred directory:
+Once done, run the following download scripts in resources/flowback folder from within your preferred directory:
 * backend.bash
 * frontend.bash
 
-Within resources/templates, there's a .flowback_pgpass file that needs to be in backend.
+Copy resources/templates/flowback/backend/.flowback_pgpass to the new backend directory and modify it as needed.
 
-Also follow the .env.example in respective backend/frontend folders.
+Also follow the .env.example for the respective new backend/frontend folders.
 
-once done, you can run update_backend.bash and update_frontend.bash within respective backend/frontend folders to setup
+Once done, you can run update_backend.bash and update_frontend.bash within respective backend/frontend folders to setup
 the flowback instance. Don't forget to change these files if there's any customizations needed!
 
 # Flowback In Depth Setup

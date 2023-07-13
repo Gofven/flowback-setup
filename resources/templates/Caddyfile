@@ -1,18 +1,17 @@
 test.flowback.org {
-        reverse_proxy * :5173  # Frontend Port
+        reverse_proxy * :5173 # Frontend Port
 
         route /api/* {
                 uri strip_prefix /api
-                reverse_proxy :8105  # Backend Port
+                reverse_proxy :8105 # Backend Port
         }
 
         route /api/media/* {
                 uri strip_prefix /api/media
-                root * /home/user/Flowback/test/backend/media  # Flowback Backend Media directory
+                root * /home/user/Flowback/test/backend/media # Flowback Backend Media directory
                 file_server
-
         }
 
-        reverse_proxy /admin* :8105  # Backend Port
-        reverse_proxy /static/admin* :8105  # Backend Port
+        reverse_proxy /admin* :8105 # Backend Port
+        reverse_proxy /static/admin* :8105 # Backend Port
 }

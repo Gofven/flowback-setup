@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Setup Backend
-git clone https://github.com/Gofven/flowback.git backend
+source .env
+git clone "${BACKEND_REPO}" backend
+
 cd backend || exit
 python3.10 -m venv venv
 source venv/bin/activate
